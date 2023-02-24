@@ -16549,6 +16549,7 @@ function doFindIssues() {
             core.info(`[doFindIssues] Query issues empty!`);
         }
         core.setOutput('issues', JSON.stringify(issues));
+        core.setOutput('count', issues.length);
     });
 }
 exports.doFindIssues = doFindIssues;

@@ -261,6 +261,7 @@ export async function doFindIssues() {
     core.info(`[doFindIssues] Query issues empty!`);
   }
   core.setOutput('issues', JSON.stringify(issues));
+  core.setOutput('count', issues.length);
 }
 
 export async function doLockIssues(body: string, emoji?: string) {

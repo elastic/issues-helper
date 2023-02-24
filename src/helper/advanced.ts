@@ -249,6 +249,8 @@ export async function doFindIssues() {
         state: issue.state,
         created: issue.created_at,
         updated: issue.updated_at,
+        labels: issue.labels,
+        assignees: issue.assignees,
       };
     });
     if (direction === 'desc') {
